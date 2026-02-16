@@ -1,0 +1,88 @@
+version: '3.8'
+
+services:
+  # 1. Database
+  postgres:
+    image: postgres:16-alpine
+    container_name: hive_db
+    restart: always
+    environment:
+      POSTGRES_USER: hive_admin
+      POSTGRES_PASSWORD: password123
+      POSTGRES_DB: event_hive
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+
+  # 2. Redis
+  redis:
+    image: redis:7-alpine
+    container_name: hive_redis
+    ports:
+      - "6379:6379"
+
+  # 3. Auth Service
+  auth-service:
+    build: ./event-hive-auth-service
+    container_name: hive_auth
+    ports:
+      - "5001:5001"
+    environment:
+      - PORT=5001
+      - DB_HOST=postgres # Uses the service name above!
+      - DB_USER=hive_admin
+      - DB_PASSWORD=password123
+      - DB_NAME=event_hive
+      - JWT_SECRET=super_secret_key_change_this_in_production
+    depends_on:
+      - postgres
+    restart: on-failure
+    
+
+  # 4. Core Backend (Monolith)
+  backend:
+    build: ./event-hive-core-service
+    container_name: hive_core
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+      - DB_HOST=postgres
+      - DB_USER=hive_admin
+      - DB_PASSWORD=password123
+      - DB_NAME=event_hive
+      - REDIS_HOST=redis
+      - JWT_SECRET=super_secret_key_change_this_in_production
+    depends_on:
+      - postgres
+      - redis
+    restart: on-failure
+
+  # 5. API Gateway
+  api-gateway:
+    build: ./api-gateway
+    container_name: hive_gateway
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - AUTH_SERVICE_URL=http://auth-service:5001
+      - CORE_SERVICE_URL=http://backend:5000
+    depends_on:
+      - auth-service
+      - backend
+    restart: on-failure
+
+  # 6. PgAdmin (Optional)
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: hive_pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: root
+    ports:
+      - "5050:80"
+    depends_on:
+      - postgres
+    
