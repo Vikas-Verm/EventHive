@@ -15,7 +15,6 @@ describe("JWT Utility", () => {
       role: "admin",
       email: "admin@gmail.com",
     });
-    console.log("Generated Token:", token);
     expect(typeof token).toBe("string");
     expect(token.length).toBeGreaterThan(10);
   });
