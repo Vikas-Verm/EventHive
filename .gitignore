@@ -1,0 +1,19 @@
+# Dependencies
+node_modules
+*/node_modules
+
+# Environment Variables (Security Risk!)
+.env
+*/.env
+
+# OS Files
+.DS_Store
+
+# IDE Files
+.vscode
+.idea
+
+# Build Artifacts
+dist
+build
+coverage
