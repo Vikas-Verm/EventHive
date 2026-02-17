@@ -67,3 +67,7 @@
 # Completed: Full System Smoke Test (Auth -> Gateway -> Backend -> DB -> Redis).
 # Confirmed: Docker Networking is 100% functional.
 # Next Up: Day 19 - CI/CD Pipelines (GitHub Actions).
+
+# Status: Month 3, Week 3 (Day 20)
+# Completed: Implemented Redis Caching (Cache-Aside Pattern) for Event listing.
+# Next Up: Image Uploads (AWS S3 or Local Multer).
