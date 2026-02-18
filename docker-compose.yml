@@ -58,6 +58,8 @@ services:
       - postgres
       - redis
     restart: on-failure
+    volumes:
+      - ./event-hive-core-service/uploads:/app/uploads  <-- ADD THIS LINE
 
   # 5. API Gateway
   api-gateway:

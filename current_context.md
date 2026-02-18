@@ -71,3 +71,13 @@
 # Status: Month 3, Week 3 (Day 20)
 # Completed: Implemented Redis Caching (Cache-Aside Pattern) for Event listing.
 # Next Up: Image Uploads (AWS S3 or Local Multer).
+
+# Status: Month 3, Week 3 (Day 21)
+# Completed: Implemented Image Uploads using Multer.
+# Configured: Docker Volumes for persistent file storage.
+# Next Up: Advanced Error Handling & Logging (Winston).
+
+# Status: Month 3, Week 3 (Day 22)
+# Completed: Implemented Winston Logger & Global Error Handler.
+# Result: Standardized error responses across the entire backend.
+# Next Up: Testing Strategy (Integration Tests with Supertest).
