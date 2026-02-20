@@ -66,9 +66,9 @@ services:
     build: ./api-gateway
     container_name: hive_gateway
     ports:
-      - "8000:8000"
+      - "7000:7000"
     environment:
-      - PORT=8000
+      - PORT=7000
       - AUTH_SERVICE_URL=http://auth-service:5001
       - CORE_SERVICE_URL=http://backend:5000
     depends_on:
@@ -87,4 +87,23 @@ services:
       - "5050:80"
     depends_on:
       - postgres
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: eventhive-prometheus
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+    depends_on:
+      - backend
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: eventhive-grafana
+    ports:
+      - "3001:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin 
+    depends_on:
+      - prometheus
     

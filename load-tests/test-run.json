@@ -1,0 +1,663 @@
+{
+  "aggregate": {
+    "counters": {
+      "vusers.created_by_name.Browse Events": 1050,
+      "vusers.created": 1050,
+      "http.requests": 1050,
+      "http.codes.200": 1050,
+      "http.responses": 1050,
+      "http.downloaded_bytes": 276150,
+      "plugins.metrics-by-endpoint./api/events.codes.200": 1050,
+      "vusers.failed": 0,
+      "vusers.completed": 1050
+    },
+    "rates": {
+      "http.request_rate": 40
+    },
+    "firstCounterAt": 1771435674232,
+    "firstHistogramAt": 1771435674493,
+    "lastCounterAt": 1771435704554,
+    "lastHistogramAt": 1771435704554,
+    "firstMetricAt": 1771435674232,
+    "lastMetricAt": 1771435704554,
+    "period": 1771435700000,
+    "summaries": {
+      "http.response_time": {
+        "min": 2,
+        "max": 241,
+        "count": 1050,
+        "mean": 8.2,
+        "p50": 4,
+        "median": 4,
+        "p75": 6,
+        "p90": 10.1,
+        "p95": 16,
+        "p99": 125.2,
+        "p999": 202.4
+      },
+      "http.response_time.2xx": {
+        "min": 2,
+        "max": 241,
+        "count": 1050,
+        "mean": 8.2,
+        "p50": 4,
+        "median": 4,
+        "p75": 6,
+        "p90": 10.1,
+        "p95": 16,
+        "p99": 125.2,
+        "p999": 202.4
+      },
+      "plugins.metrics-by-endpoint.response_time./api/events": {
+        "min": 2,
+        "max": 241,
+        "count": 1050,
+        "mean": 8.2,
+        "p50": 4,
+        "median": 4,
+        "p75": 6,
+        "p90": 10.1,
+        "p95": 16,
+        "p99": 125.2,
+        "p999": 202.4
+      },
+      "vusers.session_length": {
+        "min": 1003,
+        "max": 1357.2,
+        "count": 1050,
+        "mean": 1012.7,
+        "p50": 1002.4,
+        "median": 1002.4,
+        "p75": 1002.4,
+        "p90": 1022.7,
+        "p95": 1022.7,
+        "p99": 1176.4,
+        "p999": 1326.4
+      }
+    },
+    "histograms": {
+      "http.response_time": {
+        "min": 2,
+        "max": 241,
+        "count": 1050,
+        "mean": 8.2,
+        "p50": 4,
+        "median": 4,
+        "p75": 6,
+        "p90": 10.1,
+        "p95": 16,
+        "p99": 125.2,
+        "p999": 202.4
+      },
+      "http.response_time.2xx": {
+        "min": 2,
+        "max": 241,
+        "count": 1050,
+        "mean": 8.2,
+        "p50": 4,
+        "median": 4,
+        "p75": 6,
+        "p90": 10.1,
+        "p95": 16,
+        "p99": 125.2,
+        "p999": 202.4
+      },
+      "plugins.metrics-by-endpoint.response_time./api/events": {
+        "min": 2,
+        "max": 241,
+        "count": 1050,
+        "mean": 8.2,
+        "p50": 4,
+        "median": 4,
+        "p75": 6,
+        "p90": 10.1,
+        "p95": 16,
+        "p99": 125.2,
+        "p999": 202.4
+      },
+      "vusers.session_length": {
+        "min": 1003,
+        "max": 1357.2,
+        "count": 1050,
+        "mean": 1012.7,
+        "p50": 1002.4,
+        "median": 1002.4,
+        "p75": 1002.4,
+        "p90": 1022.7,
+        "p95": 1022.7,
+        "p99": 1176.4,
+        "p999": 1326.4
+      }
+    }
+  },
+  "intermediate": [
+    {
+      "counters": {
+        "vusers.created_by_name.Browse Events": 30,
+        "vusers.created": 30,
+        "http.requests": 30,
+        "http.codes.200": 30,
+        "http.responses": 30,
+        "http.downloaded_bytes": 7890,
+        "plugins.metrics-by-endpoint./api/events.codes.200": 30,
+        "vusers.failed": 0,
+        "vusers.completed": 25
+      },
+      "rates": {
+        "http.request_rate": 5
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1771435674232,
+      "firstHistogramAt": 1771435674493,
+      "lastCounterAt": 1771435679455,
+      "lastHistogramAt": 1771435679455,
+      "firstMetricAt": 1771435674232,
+      "lastMetricAt": 1771435679455,
+      "period": "1771435670000",
+      "summaries": {
+        "http.response_time": {
+          "min": 6,
+          "max": 241,
+          "count": 30,
+          "mean": 41.4,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 25.8,
+          "p90": 125.2,
+          "p95": 153,
+          "p99": 202.4,
+          "p999": 202.4
+        },
+        "http.response_time.2xx": {
+          "min": 6,
+          "max": 241,
+          "count": 30,
+          "mean": 41.4,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 25.8,
+          "p90": 125.2,
+          "p95": 153,
+          "p99": 202.4,
+          "p999": 202.4
+        },
+        "plugins.metrics-by-endpoint.response_time./api/events": {
+          "min": 6,
+          "max": 241,
+          "count": 30,
+          "mean": 41.4,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 25.8,
+          "p90": 125.2,
+          "p95": 153,
+          "p99": 202.4,
+          "p999": 202.4
+        },
+        "vusers.session_length": {
+          "min": 1009.6,
+          "max": 1264.7,
+          "count": 25,
+          "mean": 1053.1,
+          "p50": 1022.7,
+          "median": 1022.7,
+          "p75": 1064.4,
+          "p90": 1130.2,
+          "p95": 1176.4,
+          "p99": 1224.4,
+          "p999": 1224.4
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 6,
+          "max": 241,
+          "count": 30,
+          "mean": 41.4,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 25.8,
+          "p90": 125.2,
+          "p95": 153,
+          "p99": 202.4,
+          "p999": 202.4
+        },
+        "http.response_time.2xx": {
+          "min": 6,
+          "max": 241,
+          "count": 30,
+          "mean": 41.4,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 25.8,
+          "p90": 125.2,
+          "p95": 153,
+          "p99": 202.4,
+          "p999": 202.4
+        },
+        "plugins.metrics-by-endpoint.response_time./api/events": {
+          "min": 6,
+          "max": 241,
+          "count": 30,
+          "mean": 41.4,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 25.8,
+          "p90": 125.2,
+          "p95": 153,
+          "p99": 202.4,
+          "p999": 202.4
+        },
+        "vusers.session_length": {
+          "min": 1009.6,
+          "max": 1264.7,
+          "count": 25,
+          "mean": 1053.1,
+          "p50": 1022.7,
+          "median": 1022.7,
+          "p75": 1064.4,
+          "p90": 1130.2,
+          "p95": 1176.4,
+          "p99": 1224.4,
+          "p999": 1224.4
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Browse Events": 348,
+        "vusers.created": 348,
+        "http.requests": 348,
+        "http.codes.200": 347,
+        "http.responses": 347,
+        "http.downloaded_bytes": 91261,
+        "plugins.metrics-by-endpoint./api/events.codes.200": 347,
+        "vusers.failed": 0,
+        "vusers.completed": 302
+      },
+      "rates": {
+        "http.request_rate": 40
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1771435680231,
+      "firstHistogramAt": 1771435680250,
+      "lastCounterAt": 1771435689997,
+      "lastHistogramAt": 1771435689987,
+      "firstMetricAt": 1771435680231,
+      "lastMetricAt": 1771435689997,
+      "period": "1771435680000",
+      "summaries": {
+        "http.response_time": {
+          "min": 2,
+          "max": 63,
+          "count": 347,
+          "mean": 5.4,
+          "p50": 4,
+          "median": 4,
+          "p75": 6,
+          "p90": 8.9,
+          "p95": 12.1,
+          "p99": 30.3,
+          "p999": 41.7
+        },
+        "http.response_time.2xx": {
+          "min": 2,
+          "max": 63,
+          "count": 347,
+          "mean": 5.4,
+          "p50": 4,
+          "median": 4,
+          "p75": 6,
+          "p90": 8.9,
+          "p95": 12.1,
+          "p99": 30.3,
+          "p999": 41.7
+        },
+        "plugins.metrics-by-endpoint.response_time./api/events": {
+          "min": 2,
+          "max": 63,
+          "count": 347,
+          "mean": 5.4,
+          "p50": 4,
+          "median": 4,
+          "p75": 6,
+          "p90": 8.9,
+          "p95": 12.1,
+          "p99": 30.3,
+          "p999": 41.7
+        },
+        "vusers.session_length": {
+          "min": 1003.2,
+          "max": 1064.9,
+          "count": 302,
+          "mean": 1008.2,
+          "p50": 1002.4,
+          "median": 1002.4,
+          "p75": 1002.4,
+          "p90": 1022.7,
+          "p95": 1022.7,
+          "p99": 1043.3,
+          "p999": 1043.3
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 2,
+          "max": 63,
+          "count": 347,
+          "mean": 5.4,
+          "p50": 4,
+          "median": 4,
+          "p75": 6,
+          "p90": 8.9,
+          "p95": 12.1,
+          "p99": 30.3,
+          "p999": 41.7
+        },
+        "http.response_time.2xx": {
+          "min": 2,
+          "max": 63,
+          "count": 347,
+          "mean": 5.4,
+          "p50": 4,
+          "median": 4,
+          "p75": 6,
+          "p90": 8.9,
+          "p95": 12.1,
+          "p99": 30.3,
+          "p999": 41.7
+        },
+        "plugins.metrics-by-endpoint.response_time./api/events": {
+          "min": 2,
+          "max": 63,
+          "count": 347,
+          "mean": 5.4,
+          "p50": 4,
+          "median": 4,
+          "p75": 6,
+          "p90": 8.9,
+          "p95": 12.1,
+          "p99": 30.3,
+          "p999": 41.7
+        },
+        "vusers.session_length": {
+          "min": 1003.2,
+          "max": 1064.9,
+          "count": 302,
+          "mean": 1008.2,
+          "p50": 1002.4,
+          "median": 1002.4,
+          "p75": 1002.4,
+          "p90": 1022.7,
+          "p95": 1022.7,
+          "p99": 1043.3,
+          "p999": 1043.3
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Browse Events": 500,
+        "vusers.created": 500,
+        "http.requests": 500,
+        "vusers.failed": 0,
+        "vusers.completed": 500,
+        "http.codes.200": 500,
+        "http.responses": 500,
+        "http.downloaded_bytes": 131500,
+        "plugins.metrics-by-endpoint./api/events.codes.200": 500
+      },
+      "rates": {
+        "http.request_rate": 50
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1771435690000,
+      "firstHistogramAt": 1771435690000,
+      "lastCounterAt": 1771435699997,
+      "lastHistogramAt": 1771435699986,
+      "firstMetricAt": 1771435690000,
+      "lastMetricAt": 1771435699997,
+      "period": "1771435690000",
+      "summaries": {
+        "vusers.session_length": {
+          "min": 1003,
+          "max": 1029.3,
+          "count": 500,
+          "mean": 1006.1,
+          "p50": 1002.4,
+          "median": 1002.4,
+          "p75": 1002.4,
+          "p90": 1002.4,
+          "p95": 1002.4,
+          "p99": 1022.7,
+          "p999": 1022.7
+        },
+        "http.response_time": {
+          "min": 2,
+          "max": 96,
+          "count": 500,
+          "mean": 5.1,
+          "p50": 4,
+          "median": 4,
+          "p75": 5,
+          "p90": 7,
+          "p95": 8.9,
+          "p99": 26.8,
+          "p999": 74.4
+        },
+        "http.response_time.2xx": {
+          "min": 2,
+          "max": 96,
+          "count": 500,
+          "mean": 5.1,
+          "p50": 4,
+          "median": 4,
+          "p75": 5,
+          "p90": 7,
+          "p95": 8.9,
+          "p99": 26.8,
+          "p999": 74.4
+        },
+        "plugins.metrics-by-endpoint.response_time./api/events": {
+          "min": 2,
+          "max": 96,
+          "count": 500,
+          "mean": 5.1,
+          "p50": 4,
+          "median": 4,
+          "p75": 5,
+          "p90": 7,
+          "p95": 8.9,
+          "p99": 26.8,
+          "p999": 74.4
+        }
+      },
+      "histograms": {
+        "vusers.session_length": {
+          "min": 1003,
+          "max": 1029.3,
+          "count": 500,
+          "mean": 1006.1,
+          "p50": 1002.4,
+          "median": 1002.4,
+          "p75": 1002.4,
+          "p90": 1002.4,
+          "p95": 1002.4,
+          "p99": 1022.7,
+          "p999": 1022.7
+        },
+        "http.response_time": {
+          "min": 2,
+          "max": 96,
+          "count": 500,
+          "mean": 5.1,
+          "p50": 4,
+          "median": 4,
+          "p75": 5,
+          "p90": 7,
+          "p95": 8.9,
+          "p99": 26.8,
+          "p999": 74.4
+        },
+        "http.response_time.2xx": {
+          "min": 2,
+          "max": 96,
+          "count": 500,
+          "mean": 5.1,
+          "p50": 4,
+          "median": 4,
+          "p75": 5,
+          "p90": 7,
+          "p95": 8.9,
+          "p99": 26.8,
+          "p999": 74.4
+        },
+        "plugins.metrics-by-endpoint.response_time./api/events": {
+          "min": 2,
+          "max": 96,
+          "count": 500,
+          "mean": 5.1,
+          "p50": 4,
+          "median": 4,
+          "p75": 5,
+          "p90": 7,
+          "p95": 8.9,
+          "p99": 26.8,
+          "p999": 74.4
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Browse Events": 172,
+        "vusers.created": 172,
+        "http.requests": 172,
+        "http.codes.200": 173,
+        "http.responses": 173,
+        "http.downloaded_bytes": 45499,
+        "plugins.metrics-by-endpoint./api/events.codes.200": 173,
+        "vusers.failed": 0,
+        "vusers.completed": 223
+      },
+      "rates": {
+        "http.request_rate": 50
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1771435700000,
+      "firstHistogramAt": 1771435700000,
+      "lastCounterAt": 1771435704554,
+      "lastHistogramAt": 1771435704554,
+      "firstMetricAt": 1771435700000,
+      "lastMetricAt": 1771435704554,
+      "period": "1771435700000",
+      "summaries": {
+        "http.response_time": {
+          "min": 2,
+          "max": 224,
+          "count": 173,
+          "mean": 16.9,
+          "p50": 4,
+          "median": 4,
+          "p75": 7,
+          "p90": 22.9,
+          "p95": 113.3,
+          "p99": 165.7,
+          "p999": 169
+        },
+        "http.response_time.2xx": {
+          "min": 2,
+          "max": 224,
+          "count": 173,
+          "mean": 16.9,
+          "p50": 4,
+          "median": 4,
+          "p75": 7,
+          "p90": 22.9,
+          "p95": 113.3,
+          "p99": 165.7,
+          "p999": 169
+        },
+        "plugins.metrics-by-endpoint.response_time./api/events": {
+          "min": 2,
+          "max": 224,
+          "count": 173,
+          "mean": 16.9,
+          "p50": 4,
+          "median": 4,
+          "p75": 7,
+          "p90": 22.9,
+          "p95": 113.3,
+          "p99": 165.7,
+          "p999": 169
+        },
+        "vusers.session_length": {
+          "min": 1003.1,
+          "max": 1357.2,
+          "count": 223,
+          "mean": 1029.1,
+          "p50": 1002.4,
+          "median": 1002.4,
+          "p75": 1002.4,
+          "p90": 1085.9,
+          "p95": 1176.4,
+          "p99": 1300.1,
+          "p999": 1326.4
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 2,
+          "max": 224,
+          "count": 173,
+          "mean": 16.9,
+          "p50": 4,
+          "median": 4,
+          "p75": 7,
+          "p90": 22.9,
+          "p95": 113.3,
+          "p99": 165.7,
+          "p999": 169
+        },
+        "http.response_time.2xx": {
+          "min": 2,
+          "max": 224,
+          "count": 173,
+          "mean": 16.9,
+          "p50": 4,
+          "median": 4,
+          "p75": 7,
+          "p90": 22.9,
+          "p95": 113.3,
+          "p99": 165.7,
+          "p999": 169
+        },
+        "plugins.metrics-by-endpoint.response_time./api/events": {
+          "min": 2,
+          "max": 224,
+          "count": 173,
+          "mean": 16.9,
+          "p50": 4,
+          "median": 4,
+          "p75": 7,
+          "p90": 22.9,
+          "p95": 113.3,
+          "p99": 165.7,
+          "p999": 169
+        },
+        "vusers.session_length": {
+          "min": 1003.1,
+          "max": 1357.2,
+          "count": 223,
+          "mean": 1029.1,
+          "p50": 1002.4,
+          "median": 1002.4,
+          "p75": 1002.4,
+          "p90": 1085.9,
+          "p95": 1176.4,
+          "p99": 1300.1,
+          "p999": 1326.4
+        }
+      }
+    }
+  ]
+}

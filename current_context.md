@@ -81,3 +81,23 @@
 # Completed: Implemented Winston Logger & Global Error Handler.
 # Result: Standardized error responses across the entire backend.
 # Next Up: Testing Strategy (Integration Tests with Supertest).
+
+# Status: Month 3, Week 4 (Day 23)
+# Completed: Implemented Integration Testing with Supertest & Jest Mocks.
+# Refactored: Split app.js and index.js for better testability.
+# Next Up: Load Testing (Artillery) or Monitoring (Prometheus).
+
+# Status: Month 3, Week 4 (Day 24)
+# Completed: Load Testing with Artillery.
+# Verified: Redis reduces response time by ~90% under load.
+# Next Up: Security Hardening (Helmet, Rate Limiting, XSS).
+
+# Status: Month 3, Week 4 (Day 25)
+# Completed: Security Hardening (Helmet, XSS-Clean, HPP).
+# Reverted: Gateway Rate Limit to 100/15min.
+# Next Up: Day 26 - Documentation (Swagger/OpenAPI).
+
+# Status: Month 3, Week 4 (Day 26)
+# Completed: Implemented Swagger UI for API Documentation.
+# URL: http://localhost:5000/api-docs
+# Next Up: Day 27 - Monitoring (Prometheus & Grafana).

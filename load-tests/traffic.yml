@@ -1,0 +1,28 @@
+config:
+  # The target is your API Gateway
+  target: "http://localhost:7000"
+  phases:
+    # Phase 1: Warm up (5 users per second for 10 seconds)
+    - duration: 10
+      arrivalRate: 5
+      name: "Warm up"
+    # Phase 2: The Spike (50 users per second for 20 seconds)
+    - duration: 20
+      arrivalRate: 50
+      name: "Traffic Spike"
+  
+  defaults:
+    headers:
+      Content-Type: "application/json"
+
+scenarios:
+  - name: "Browse Events"
+    flow:
+      # 1. Get the list of events (Tests Redis Cache)
+      - get:
+          url: "/api/events"
+      # 2. Pause for 1 second (Simulate user thinking)
+      - think: 1
+      # 3. View a single event (Replace with a real ID later if needed)
+      # - get:
+      #     url: "/api/events/1"

@@ -22,7 +22,6 @@ export const createEventHandler = async (req, res) => {
 
 export const fetchAllEventHandler = async (req, res) => {
   try {
-    console.log(req.query);
     const page = req.query.page || 1;
     const limit = Number(req.query.limit) || 10;
     const search = req.query.search || "";
