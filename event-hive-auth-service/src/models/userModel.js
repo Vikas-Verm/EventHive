@@ -7,7 +7,6 @@ export const createUser = async (
   role,
   passwordHash
 ) => {
-  console.log(firstName, lastName, email, role, passwordHash);
   const query = `
    insert into users (first_name,last_name,email,role,password_hash) values ($1,$2,$3,$4,$5) returning id, first_name, last_name, email, role, created_at
   `;

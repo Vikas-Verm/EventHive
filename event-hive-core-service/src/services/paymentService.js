@@ -5,7 +5,6 @@ const mockExternalPaymentProvider = async (amount, currency) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       // 90% chance of success, 10% chance of "Bank Error"
-      console.log(Math.random());
       const isSuccess = Math.random() > 0.1;
       if (isSuccess) {
         resolve({

@@ -47,7 +47,6 @@ export const fetchAllEventHandler = async (req, res) => {
 export const fetchEventByIdHandler = async (req, res) => {
   try {
     const { id } = req.params;
-    console.log(id);
     const response = await fetchEventById(id);
     res
       .status(200)

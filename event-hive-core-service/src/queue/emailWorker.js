@@ -21,8 +21,6 @@ const worker = new Worker(
       subject,
       text,
     });
-
-    console.log("Email sent successfully");
   },
   {
     connection: redisConnection,

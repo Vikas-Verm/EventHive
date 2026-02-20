@@ -40,7 +40,6 @@ export const getAllEvent = async ({
 };
 
 export const getEventById = async (id) => {
-  console.log(id, "modle");
   const result = await pool.query(
     "select e.*,v.name as venue_name,v.location as venue_location,v.capacity from events e INNER JOIN venues v ON e.venue_id=v.id where e.id=$1",
     [id]

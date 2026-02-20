@@ -101,3 +101,13 @@
 # Completed: Implemented Swagger UI for API Documentation.
 # URL: http://localhost:5000/api-docs
 # Next Up: Day 27 - Monitoring (Prometheus & Grafana).
+
+# Status: Month 3, Week 4 (Day 27)
+# Completed: Monitoring & Observability setup.
+# Tech: Prometheus (Data Collection) + Grafana (Visualization).
+# Next Up: Day 28 - Final Review & Architecture Diagram.
+
+# Status: Month 3, Week 4 (Day 28)
+# Completed: Month 3 FINISHED! Architecture review, README update, and portfolio prep.
+# Milestone: EventHive Backend is production-ready.
+# Next Up: Month 4 - Advanced Features (or whatever is next on the roadmap!).

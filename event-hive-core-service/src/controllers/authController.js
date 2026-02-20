@@ -37,7 +37,6 @@ export const login = async (req, res) => {
       return res.status(400).json({ error: "Email and password are required" });
     }
     const response = await loginUser(email, password);
-    console.log(response);
     res.status(200).json({
       message: "Login successful",
       token: response.token,

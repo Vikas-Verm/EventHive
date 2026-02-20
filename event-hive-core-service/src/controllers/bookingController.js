@@ -16,7 +16,6 @@ export const getAllBookingHandlers = async (req, res) => {
     const response = await getAllBookings(user_id);
     res.status(201).json({ message: "", data: response });
   } catch (error) {
-    console.log(error);
     res.status(500).json({ error: error.message });
   }
 };
